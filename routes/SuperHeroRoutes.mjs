@@ -27,9 +27,9 @@ import {
   console.log('Cargo los nuevos endpoinds');
   
   router.post('/alta', insertSuperHeroesController);  //ok
-  router.put('/heroe/update/:id', updateSuperHeroesController);  // ok
-  router.delete('/heroe/delete/:id', eliminarSuperHeroesController);  // ok
-  router.delete('/heroe/deleteByName/:name', eliminarByNameSuperHeroesController);  // ok
+  router.put('/super/update/:id', updateSuperHeroesController);  // ok
+  router.delete('/super/delete/:id', eliminarSuperHeroesController);  // ok
+  router.delete('/super/deleteByName/:name', eliminarByNameSuperHeroesController);  // ok
   
   
   export default router;

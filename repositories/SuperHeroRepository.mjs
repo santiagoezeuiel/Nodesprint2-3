@@ -66,6 +66,7 @@ async obtenerMayoresDe30() {
         const resultado = await SuperHero.find({
             edad: { $gt: 30 },
             planetaOrigen: 'Tierra',
+            poderes: { $exists: true, $type: "array" },
             $expr: { $gte: [{ $size: "$poderes" }, 2] }
         });
         // console.log('Resultado:', resultado); // chusmear en consola
